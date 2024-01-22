@@ -1,19 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>hockey</title>
-</head>
-<body>
-    <header>
 
+     <!-- tailwind css and DaisyUi added link -->
+
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+     <script src="https://cdn.tailwindcss.com"></script>
+
+     <!-- google  font-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+         <!-- tailwind custom -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                "primary-clr": '#FF4240',
+                "form-bg": 'rgba(19, 19, 24, 0.03)'
+              }
+            }
+          }
+        }
+      </script>
+      <!-- css for font -->
+      <style>
+        .font-manrope{
+            font-family: "Manrope", sans-serif;
+        }
+        li:hover{
+            background-color: #FF4240;
+            color: white;
+            border-radius: 8px;
+        }
+      </style>
+
+</head>
+<body class="font-manrope">
+    <header>
+        <!-- nav bar -->
+        <section class="text-black ">
+            <div class="w-11/12 m-auto navbar  ">
+             <div class="navbar-start ">
+               <div class="dropdown">
+                 <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                   <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                 </div>
+                 <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                    <li><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Pages</a></li>
+                    <li><a>Blog</a></li>
+                    <li><a>Contact</a></li>
+                 </ul>
+               </div>
+               <a class="btn btn-ghost text-3xl font-extrabold ">Hockey<span class="text-primary-clr">'</span>s</a>
+             </div>
+             <div class="navbar-center m-auto hidden lg:flex">
+               <ul class="menu menu-horizontal px-1 ">
+                   <li><a>Home</a></li>
+                   <li><a>About</a></li>
+                   <li><a>Pages</a></li>
+                   <li><a>Blog</a></li>
+                   <li><a>Contact</a></li>
+               </ul>
+             </div>
+             <div class="navbar-end gap-2">
+                <button class="btn btn-ghost btn-circle hidden lg:flex">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+                </button>
+               <a class="btn bg-primary-clr text-white hover:text-black">Get Ticket</a>
+             </div>
+           </div>
+        </section>
+
+        <!-- slider part -->
+        <section>
+
+                
+
+        </section>
     </header>
     <main>
 
     </main>
     <footer>
-        
+
     </footer>
 </body>
 </html>
